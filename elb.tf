@@ -6,8 +6,8 @@
 resource "aws_elb" "sample_elb" {
     name = "sample-elb"
     subnets = [
-        "${aws_subnet.sample_subnet_a.id}",
-        "${aws_subnet.sample_subnet_c.id}"
+        "${aws_subnet.sample_public_subnet_a.id}",
+        "${aws_subnet.sample_public_subnet_c.id}"
     ]
     security_groups = ["${aws_security_group.sample_elb_sg.id}"]
 

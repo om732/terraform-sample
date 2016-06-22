@@ -4,8 +4,8 @@
 #
 
 resource "aws_nat_gateway" "sample_nat_gw" {
-    allocation_id = "${aws_eip.nat.id}"
-    subnet_id = "${aws_subnet.public.id}"
+    allocation_id = "${aws_eip.sample_nat_eip.id}"
+    subnet_id = "${aws_subnet.sample_public_subnet_a.id}"
 
     depends_on = ["aws_internet_gateway.sample_gw"]
 }
