@@ -15,6 +15,8 @@ Setup to;
 - Security Groups
 - EC2
 - ELB
+- EIP
+- NAT Gateway
 
 ## Setup
 
